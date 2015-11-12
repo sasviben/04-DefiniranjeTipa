@@ -31,16 +31,18 @@ namespace Vsite.CSharp
         {
             MojaKlasa mk1 = new MojaKlasa(1);
             MojaKlasa mk2 = mk1;
-            mk2._broj = 2;
-            // TODO: Ispisati član _broj za obje instance te obrazložiti rezultat
-
-
+            mk2._broj = 2; //_broj postaje 2, te kod ispisa i jedna i druga instance ispisuju _broj
+            //  Ispisati član _broj za obje instance te obrazložiti rezultat
+            Console.WriteLine(mk1._broj);
+            Console.WriteLine(mk2._broj);
+//ispis 2 2
             MojaStruktura ms1 = new MojaStruktura(10);
             MojaStruktura ms2 = ms1;
             ms2._broj = 15;
-            // TODO: Ispisati član _broj za obje instance te obrazložiti rezultat
-
-
+            //  Ispisati član _broj za obje instance te obrazložiti rezultat
+            Console.WriteLine(ms1._broj);
+            Console.WriteLine(ms2._broj);
+//ispis 10 15
             Console.ReadKey();
 
         }
