@@ -15,12 +15,12 @@ namespace Vsite.CSharp
     class Izvedena : Bazna
     {
         public Izvedena()
-            : this(0, 0)
+            : this(0, 0)//poziva konstruktor izvedene klase
         {
         }
 
         public Izvedena(int a, int b)
-            : base(a)
+            : base(a)//poziva konstruktor bazne klase
         {
             B = b;
         }
